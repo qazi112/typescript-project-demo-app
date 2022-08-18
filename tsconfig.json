@@ -1,0 +1,17 @@
+{
+  "extends": "@tsconfig/recommended/tsconfig.json",
+  "compilerOptions": {
+    // "noImplicitAny": true,
+    "target": "ES6",
+    "module": "CommonJS",
+    "removeComments": true,
+    "outDir": "app",
+    // "allowJs": true,
+    "rootDir": "./src"
+  },
+  "include": ["./src/main.ts"],
+  "exclude": ["src/testing.ts", "./src/front", "./node_modules", "./lib"],
+  "watchOptions": {
+    "excludeDirectories": ["**/node_modules", "app"]
+  }
+}
